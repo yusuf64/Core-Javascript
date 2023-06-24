@@ -1,5 +1,6 @@
 // IN this part we will learn about functions in deep
 var x = 10;
+var sec = 122;
 a();
 b();
 console.log(x);
@@ -7,7 +8,10 @@ console.log(x);
 function a() {
   var x = 12;
   console.log(x);
+  console.log(sec);
 }
+
+// Point to note : as you can see in func a when i am printing out sec even though its not defined anywhere in the func itself it still printing out/ this is because every function has acces to global memory compponent
 
 function b() {
   var x = 15;
