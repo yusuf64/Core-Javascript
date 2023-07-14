@@ -61,18 +61,19 @@
 //   }
 // }
 // h();
-let a = 122;
-function h() {
-  console.log(a);
-  if (a) {
-    // console.lo
-    let a = 11;
-    console.log(a);
-  }
-  console.log(a);
-}
-h();
-console.log(a);
+
+// let a = 122;
+// function h() {
+//   console.log(a);
+//   if (a) {
+//     // console.lo
+//     let a = 11;
+//     console.log(a);
+//   }
+//   console.log(a);
+// }
+// h();
+// console.log(a);
 
 // let a = 10;
 
@@ -94,3 +95,10 @@ console.log(a);
 
 // b = 400;
 // console.log(b);
+
+console.log(a, "from golbal scope");
+
+if (a) {
+  let a = 10;
+  console.log(a, "from if block");
+}
