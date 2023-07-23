@@ -2,10 +2,14 @@ const GITHUB_API_URL = "https://api.github.com/users/yusuf64";
 
 const promise = fetch(GITHUB_API_URL);
 
-promise.then((data) => {
-  var a = data.json();
-  console.log(a);
-});
+promise
+  .then((data) => {
+    var a = data.json();
+    return a;
+  })
+  .then((data) => {
+    console.log(data.login);
+  });
 
 // What is a promise
 
